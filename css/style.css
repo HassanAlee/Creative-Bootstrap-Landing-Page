@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+/* MAIN-HEADER */
+#main-header {
+  min-height: 100vh;
+  /* background: url(../img/bg-masthead.jpg) no-repeat; */
+  background: linear-gradient(rgba(20, 0, 0, 0.6), rgba(20, 0, 0, 0.6)),
+    url(../img/bg-masthead.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.navbar-brand {
+  font-family: "Merriweather Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-weight: 700;
+}
+.navbar-brand:hover {
+  color: #fff !important;
+}
+.navbar-color .navbar-brand {
+  font-family: "Merriweather Sans", sans-serif;
+  color: black !important;
+  font-weight: 700;
+}
+.nav-item a.nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0 1rem !important;
+}
+.nav-item a.nav-link:hover {
+  color: white !important;
+}
+.navbar-color .nav-item a.nav-link {
+  color: black !important;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0 1rem !important;
+}
+.box-shadow {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 991px) {
+  .navbar {
+    background-color: #fff;
+  }
+  .navbar-brand {
+    font-family: "Merriweather Sans", sans-serif;
+    color: #000 !important;
+    font-weight: 700;
+  }
+  .nav-item a.nav-link {
+    color: rgb(108, 117, 125) !important;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 15px 0 !important;
+  }
+  .nav-item a.nav-link:hover {
+    color: rgb(244, 98, 58) !important;
+  }
+}
+.navbar-nav .nav-item .nav-link.active {
+  color: #f4623a !important;
+}
+
+/* MAIN-HEADER END */
+/* HEADER-CONTENT */
+#main-content-box h1 {
+  margin-top: 110px;
+  font-size: 3.5rem;
+  color: #fff !important;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.navbar-color {
+  color: #000 !important;
+}
+.divider {
+  height: 3px;
+  width: 50px;
+  background: #f4623a;
+  margin: 25px auto;
+}
+#main-content-box p {
+  font-family: "Merriweather", serif;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 3rem !important;
+  padding: 20px;
+  margin-top: -20px;
+}
+.button {
+  background-color: #f4623a;
+  padding: 1.25rem 2.25rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #fff;
+  font-weight: 700;
+  margin-top: -20px;
+}
+.button:hover {
+  background-color: #e03d14;
+  color: #fff;
+}
+#main-header .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /* background-color: rgba(224, 61, 25, 0.363); */
+  background: #e2171767;
+}
+/* HEADER-CONTENT END */
+/* ABOUT SECTION */
+#about {
+  min-height: 70vh;
+  background-color: #f4623a;
+  padding: 8rem 0px;
+}
+#about h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+#about .divider {
+  height: 4px;
+  width: 50px;
+  background: #fff;
+  margin: 25px auto;
+}
+#about p {
+  font-family: "Merriweather", serif;
+  /* font-size: 1.15rem; */
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 3rem !important;
+  padding: 20px 20px;
+  margin-top: -20px;
+}
+#about #abt-btn {
+  margin-top: -60px;
+  background-color: #fff;
+  color: #000;
+}
+/* ABOUT SECTION END */
+#services {
+  padding: 8rem 0;
+}
+#services .divider {
+  height: 4px;
+}
+#services .service-icon {
+  font-size: 2.5rem;
+  color: #f4625a;
+}
+.service p,
+#contact p {
+  font-family: "Merriweather", serif;
+  /* font-size: 1.15rem; */
+  color: #6c757d;
+  margin-bottom: 3rem !important;
+  padding: 20px 20px;
+  margin-top: -20px;
+}
+/* SERVICES SECTION END*/
+/* PORTFOLIO SECTION */
+#portfolio {
+  margin-top: -90px;
+}
+.portfolio-item {
+  position: relative;
+  transition: all 1s ease;
+}
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background: #e03d14cc;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.portfolio-item p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.portfolio-item h5 {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  margin-top: -10px;
+}
+.portfolio-item:hover .overlay {
+  opacity: 1;
+  transition: all 1s ease;
+}
+/* PORTFOLIO SECTION END */
+/* DOWNLOAD */
+#download {
+  background-color: #212529;
+  padding: 100px;
+}
+#download h2 {
+  color: #fff;
+}
+#download .button {
+  color: #212529;
+  background-color: #fff;
+  cursor: pointer;
+}
+/* DOWNLOAD END */
+/* CONTACT */
+#contact {
+  padding: 8rem 0px;
+}
+#contact p {
+  color: #6c757d !important;
+  /* padding: 0px; */
+  box-sizing: border-box;
+}
+#contact h2 {
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.form {
+  margin-top: -40px;
+}
+input,
+textarea {
+  margin: 18px 0px;
+  padding: 15px !important;
+}
+input::placeholder,
+textarea::placeholder,
+.feedback {
+  font-family: "Merriweather", serif;
+  color: #000 !important;
+  font-weight: 500 !important;
+}
+.feedback {
+  color: red !important;
+}
+.btn-submit {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  color: #fff;
+  background-color: #f4623a;
+  opacity: 0.5;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+.phone-number {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.phone-number i {
+  font-size: 35px;
+  color: #6c757d;
+}
+.number {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  color: black;
+}
+.copyright {
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  color: #6c757d;
+}
+/* CONTACT END */
